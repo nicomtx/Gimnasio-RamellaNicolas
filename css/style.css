@@ -14,10 +14,10 @@ main{
 }
 
 main > *{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-display: flex;
-justify-content: center;
-align-items: center; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 header{
@@ -107,11 +107,11 @@ div {
 }
 
 .imagenes {
-        grid-area: imagen;
-        display: grid;
-        width: 100%;
-        height: 600px;
-    }
+    grid-area: imagen;
+    display: grid;
+    width: 100%;
+    height: 600px;
+}
     
 .imagen1 {
     grid-area: imagen;
@@ -129,12 +129,12 @@ div {
 }
 
 .imagen3 {
-        grid-area: contenido2;
-        display: grid;
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
+    grid-area: contenido2;
+    display: grid;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
 
 
 div h4{
@@ -144,32 +144,32 @@ div h4{
     text-align: right;
     font-size: 60px;
     color: rgb(253, 251, 251);
-    }
+}
 
 div h5{
-        grid-area: contenido2;
-        position:absolute; left: 10%;
-        font-family: 'Roboto', sans-serif;
-        text-align: right;
-        font-size: 60px;
-        color: rgb(253, 251, 251);
-    }
+    grid-area: contenido2;
+    position:absolute; left: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size: 60px;
+    color: rgb(253, 251, 251);
+}
     
 div h6{
-        grid-area: contenido2;
-        position:absolute; left: 10%;
-        font-family: 'Roboto', sans-serif;
-        text-align: right;
-        font-size: 60px;
-        color: rgb(253, 251, 251);
-        transition-property: all;
-        transition-duration: 5s;
-        transition-timing-function: linear;
+    grid-area: contenido2;
+    position:absolute; left: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size: 60px;
+    color: rgb(253, 251, 251);
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
 }
 
 div h6:hover{
-   font-size:  120px;
-    }
+    font-size: 120px;
+}
 
 .funcional{
     display: flex;
