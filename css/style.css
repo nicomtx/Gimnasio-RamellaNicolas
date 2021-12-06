@@ -1,0 +1,235 @@
+main{
+    display: grid;
+    font-style: italic;
+    gap: 0px;
+    background-color: black;
+
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "contenido"
+    "contenido1"
+    "contenido2"
+    "footer";
+}
+
+main > *{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(0, 0, 0);
+}
+
+section{
+    display: grid;
+    grid-area: contenido ;
+    grid-template-columns: repeat(5 , 1fr);
+    background-color: rgb(56, 56, 56);
+    font-size: x-large;
+    }
+
+.texto{
+    display: flex;
+    grid-area: section;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    grid-column: 1 / 3;   
+    width: 500px;
+    height: 50%;
+    margin-left: 20%;
+}
+
+.video{
+    display: grid;
+    grid-column: 3 / 5;
+    width: 150%;
+    height: 100%;
+}
+
+nav ul{
+    display: flex;
+    grid-area: header;
+    background-color: rgb(0, 0, 0);
+    }
+
+nav li{
+    display: grid;
+    grid-area: header;
+    justify-content: 3px;
+    list-style: none;
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+nav a{
+    grid-area: header;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    grid-column: 2 / 4 ;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    grid-column: 1/4;
+}
+
+footer img {
+    grid-area: footer;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    grid-column: 2/3;
+}
+
+footer p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    grid-area: header;
+    width: 80px;
+    height: 80px;
+}
+
+div {
+    grid-area: imagen;
+    display: flex;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-column: 1 / 4;
+}
+
+.imagenes {
+        grid-area: imagen;
+        display: grid;
+        width: 100%;
+        height: 600px;
+    }
+    
+.imagen1 {
+    grid-area: imagen;
+    display: grid;
+    width: 100%;
+    height: 400px;
+}
+
+.imagen2 {
+    grid-area: contenido1;
+    display: grid;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.imagen3 {
+        grid-area: contenido2;
+        display: grid;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+
+div h4{
+    grid-area: contenido1;
+    position:absolute; right: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    font-size: 60px;
+    color: rgb(253, 251, 251);
+    }
+
+div h5{
+        grid-area: contenido2;
+        position:absolute; left: 10%;
+        font-family: 'Roboto', sans-serif;
+        text-align: right;
+        font-size: 60px;
+        color: rgb(253, 251, 251);
+    }
+    
+div h6{
+        grid-area: contenido2;
+        position:absolute; left: 10%;
+        font-family: 'Roboto', sans-serif;
+        text-align: right;
+        font-size: 60px;
+        color: rgb(253, 251, 251);
+        transition-property: all;
+        transition-duration: 5s;
+        transition-timing-function: linear;
+}
+
+div h6:hover{
+   font-size:  120px;
+    }
+
+.funcional{
+    display: flex;
+    grid-area: contenido1;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-column: 1 / 4;
+}
+
+.musculacion{
+        display: flex;
+        grid-area: contenido2;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-column: 1 / 4;
+    }
+    
+.titulos{
+        grid-area: imagen;
+        position:absolute; left: 10%;
+        font-family: 'Roboto', sans-serif;
+        text-align: right;
+        font-size: 60px;
+        color: rgb(253, 251, 251);
+    }
+
+.titulos1{
+        grid-area: imagen;
+        font-family: 'Roboto', sans-serif;
+        text-align: 10%;
+        font-size: 30px;
+        color: rgb(250, 248, 248);
+    }
+
+/*tablet*/
+
+@media screen and (min-width: 768px){
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "imagen imagen"
+        "contenido contenido"
+        "contenido1 contenido1"
+        "contenido2 contenido2"
+        "footer footer";
+    }
+}
+
+/*desktop*/
+
+@media screen and (min-width:1200px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 3fr 3fr 3fr 3fr 1fr;
+        grid-template-areas: 
+    "header header header"
+    "imagen imagen imagen"
+    "contenido contenido contenido"
+    "contenido1 contenido1 contenido1"
+    "contenido2 contenido2 contenido2"
+    "footer footer footer";
+    }
+}

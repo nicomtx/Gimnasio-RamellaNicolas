@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Ares/img/logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Ares/css/style.css">
+    <title>Gimnasio Ares</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <nav class="nav">
+        
+            <ul class="menu">
+                <li>
+                    
+                    <a href="../Ares/index.html"><img src="../Ares/img/logo.jpg" class="logo" alt="logo"></a>    
+                </li>
+                <li>
+                    <a href="../Ares/natacion.html">Natación</a>
+                </li>
+                <li>
+                    <a href="../Ares/musculacion.html">Musculación</a> 
+                </li>
+                <li>
+                    <a href="../Ares/gimnasia acuatica.html">Gimnasia Acuática</a>
+                </li>
+                <li>
+                    <a href="../Ares/contacto.html">Contacto</a>
+                </li>
+            </ul>
+            </nav>
+        </header>
+
+<section class="titulos1">
+
+    <div>
+
+<form action="servidor.php" method="post">
+
+<label for="nombre">Nombre</label>
+<input type="text" name="nombre" placeholder="escribe tu nombre" required><br><br>
+
+<label for="apellido">Apellido</label>
+<input type="text" name="apellido" placeholder="escribe tu apellido" required><br><br>
+
+<label for="edad">Edad</label>
+<input type="number" name="edad"><br><br>
+
+<div>Sexo:</div>
+<label for="sexo">Femenino</label>
+<input type="radio" name="sexo" value="femenino">
+<label for="sexo">Masculino</label>
+<input type="radio" name="sexo" value="masculino">
+<label for="sexo">Otro</label>
+<input type="radio" name="sexo" value="otro"><br><br>
+
+<div>Actividad:</div>
+<label for="actividad">Natación</label>
+<input type="checkbox" name="actividad" value="natación">
+<label for="actividad">Musculación</label>
+<input type="checkbox" name="actividad" value="musculación">
+<label for="actividad">Gimnasia Acuática</label>
+<input type="checkbox" name="actividad" value="gimnasia acuática"><br><br>
+
+<div>Turno:</div>
+<select name="turno" id="turno">
+<option value="m">Mañana</option>
+<option value="t">Tarde</option>
+<option value="n">Noche</option>
+</select>
+<br><br>
+
+<label for="mail">Email</label>
+<input type="email" name="mail"><br><br>
+
+<label for="pass">Contraseña</label>
+<input type="password" name="pass" required><br><br>
+
+<div>
+    <h3>Comentarios</h3>
+</div>
+
+<textarea name="Comentario" id="" cols="30" rows="10"></textarea><br><br>
+
+<input type="submit" value="Enviar Formulario">
+<input type="reset" value="Borrar Formulario">
+
+</form>
+
+    </div>
+</section>
+
+<footer>
+    <img src="../Ares/img/facebook.png" alt="facebook">
+    <img src="../Ares/img/instagram.png" alt="instagram">
+    <img src="../Ares/img/tw.png" alt="twitter">
+    <img src="../Ares/img/what.png" alt="whatsapp">
+<p>Copyright © 2021-2022 CoderHouse, todos los derechos reservados.</p>
+</footer>
+
+</main>
+
+</body>
+</html>
